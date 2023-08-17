@@ -4,7 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "alphanumeric-input": "node ./src/alphanumeric-input.js",
+    "break-camel-case": "node ./src/break-camel-case.js",
+    "capital-casing": "node ./src/capital-casing.js",
+    "'--> codewars-style-ranking-system'": "node ./src/codewars-style-ranking-system.js",
+    "count-smiley-faces": "node ./src/count-smiley-faces.js",
+    "digital-root": "node ./src/digital-root.js",
+    "duplicate-encoder": "node ./src/duplicate-encoder.js",
+    "greed-dice-game": "node ./src/greed-dice-game.js",
+    "human-readable-time": "node ./src/human-readable-time.js",
+    "persistent-bugger": "node ./src/persistent-bugger.js",
+    "pick-peaks": "node ./src/pick-peaks.js",
+    "range-extract": "node ./src/range-extract.js",
+    "roman-numbers-decoder": "node ./src/roman-numbers-decoder.js"
   },
   "keywords": [],
   "author": "",
