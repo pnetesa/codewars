@@ -1,4 +1,4 @@
-const assert = require('assert');
+const { strictEqual } = require('./util/test');
 
 // Create a function that takes a Roman numeral as its argument and returns its value as a numeric decimal integer.
 // You don't need to validate the form of the Roman numeral.
@@ -52,15 +52,8 @@ function solution (roman) {
   return result;
 }
 
-function doTest (romanString, expected) {
-  const actual = solution(romanString);
-  console.log(actual);
-  console.log('--------------');
-  assert(actual === expected, `for roman number ${romanString}`);
-}
-
-doTest('XXI', 21);
-doTest('I', 1);
-doTest('IV', 4);
-doTest('MMVIII', 2008);
-doTest('MDCLXVI', 1666);
+strictEqual(solution('XXI'), 21, 'XXI === 21');
+strictEqual(solution('I'), 1, 'I === 1');
+strictEqual(solution('IV'), 4, 'IV === 4');
+strictEqual(solution('MMVIII'), 2008, 'MMVIII === 2008');
+strictEqual(solution('MDCLXVI'), 1666, 'MDCLXVI === 1666');
