@@ -3,27 +3,27 @@ const assert = require('assert');
 function strictEqual(actual, expected, message = '') {
   try {
     assert(actual === expected, message);
-    console.log(message ? `${message} - OK` : `-> ${expected} - OK`);
+    console.log(message ? `${message} - PASS` : `-> ${expected} - PASS`);
   } catch (e) {
-    console.log(`EXPECTED: ${expected} ACTUAL: ${actual} ${message}`);
+    console.log(`EXPECTED: ${expected} ACTUAL: ${actual} ${message} - FAIL`);
   }
 };
 
 function deepEqual(actual, expected, message = '') {
   try {
     assert(util.inspect(actual, {}) === util.inspect(expected), message);
-    console.log(message ? `${util.inspect(message)} - OK` : `-> ${util.inspect(expected)} - OK`);
+    console.log(message ? `${util.inspect(message)} - PASS` : `-> ${util.inspect(expected)} - PASS`);
   } catch (e) {
-    console.log(`EXPECTED: ${util.inspect(expected)} ACTUAL: ${util.inspect(actual)} ${message}`);
+    console.log(`EXPECTED: ${util.inspect(expected)} ACTUAL: ${util.inspect(actual)} ${message} - FAIL`);
   }
 };
 
 function expect(actual, message = '') {
   try {
     assert(actual, message);
-    console.log(`${message} - OK`);
+    console.log(`${message} - PASS`);
   } catch (e) {
-    console.log(`ACTUAL: ${actual} ${message}`);
+    console.log(`ACTUAL: ${actual} ${message} - FAIL`);
   }
 };
 
