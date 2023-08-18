@@ -7,7 +7,7 @@
     "alphanumeric-input": "node ./src/alphanumeric-input.js",
     "break-camel-case": "node ./src/break-camel-case.js",
     "capital-casing": "node ./src/capital-casing.js",
-    "'--> codewars-style-ranking-system'": "node ./src/codewars-style-ranking-system.js",
+    "codewars-style-ranking-system": "node ./src/codewars-style-ranking-system.js",
     "count-smiley-faces": "node ./src/count-smiley-faces.js",
     "digital-root": "node ./src/digital-root.js",
     "duplicate-encoder": "node ./src/duplicate-encoder.js",
