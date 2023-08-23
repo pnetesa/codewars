@@ -16,7 +16,8 @@
     "persistent-bugger": "node ./src/persistent-bugger.js",
     "pick-peaks": "node ./src/pick-peaks.js",
     "range-extract": "node ./src/range-extract.js",
-    "roman-numbers-decoder": "node ./src/roman-numbers-decoder.js"
+    "roman-numbers-decoder": "node ./src/roman-numbers-decoder.js",
+    "'--> SUM-INTERVALS'": "node ./src/sum-intervals.js"
   },
   "keywords": [],
   "author": "",
